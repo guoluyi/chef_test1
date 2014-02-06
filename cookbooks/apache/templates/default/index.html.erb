@@ -1,0 +1,14 @@
+# cookbooks/apache/templates/default
+
+<html>
+	<body>
+		<h1> Welcome to LUYI GUO's node!!! </h1>
+		<h2> Hello from <%= node["company"]%>! </h2>
+		<h1> Hello from <%= node["fqdn"]%>! </h1>
+		<p>
+			This server has <%= node["memory"]["total"].to_i / 1024 %> MB memory!!!!! 
+		</p>
+
+
+	</body>
+</html>
